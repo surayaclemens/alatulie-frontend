@@ -1,0 +1,18 @@
+@use '../../styles/partials/colours' as *;
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.select-lang{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../assets/images/background-fade.png);
+    background-size: cover;
+
+    &__button{
+       @include button-basic;
+       width: 70%;
+
+    }
+
+}

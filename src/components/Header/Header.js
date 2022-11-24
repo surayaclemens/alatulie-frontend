@@ -1,10 +1,10 @@
 import './Header.scss';
+import arrow from '../../assets/images/arrow-blue.svg'
 
 function Header() {
     return (
         <header className="header">  
-            <h1 className="header__title">Title</h1>
-            <p className="header__description">Description</p>
+            <img className="header__arrow" src={arrow}/>
         </header>
     )
 }
