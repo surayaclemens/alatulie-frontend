@@ -1,19 +1,44 @@
 @use '../../styles/partials/colours' as *;
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/global' as *;
+
 
 .intro{
     padding: 2rem;
+    height: 100vh;
     text-align: left;
     background-image: url(../../assets/images/background-fade.png);
     background-size: cover;
     color: $text-primary-light;
 
     &__heading{
+        @include header;
+        margin: 0.25rem 0;
 
     }
 
+    &__input{
+        background: transparent;
+        border: none;
+        color: $text-primary-light;
+        font-size: 1.5rem;
+        &::placeholder{
+            color: $text-primary-light;
+
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+
     &__body{
+        @include body-text;
+        margin: 0.75rem 0;
+
+        &--italic{
+            font-style: italic;
+        }
 
     }
 

@@ -1,10 +1,11 @@
 import './Header.scss';
 import arrow from '../../assets/images/arrow-blue.svg'
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
         <header className="header">  
-            <img className="header__arrow" src={arrow}/>
+            <NavLink to='/intro'><img className="header__arrow" src={arrow}/></NavLink>
         </header>
     )
 }

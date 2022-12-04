@@ -1,6 +1,8 @@
 @use '../../styles/partials/colours' as *;
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/global' as *;
+
 
 .select-lang{
     display: flex;
@@ -8,10 +10,25 @@
     align-items: center;
     background-image: url(../../assets/images/background-fade.png);
     background-size: cover;
+    height: 100vh;
+
+
+    &__buttons{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    
 
     &__button{
        @include button-basic;
        width: 70%;
+       margin: 3rem 0;
 
     }
 

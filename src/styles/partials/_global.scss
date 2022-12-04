@@ -1,0 +1,13 @@
+@use './colours' as *;
+@use './mixins' as *;
+@use './variables' as *;
+
+
+
+
+a{ 
+    text-decoration: none;
+    &:visited{
+        color: $text-primary-light;
+    }
+}

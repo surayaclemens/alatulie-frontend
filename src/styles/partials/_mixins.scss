@@ -11,3 +11,13 @@
     font-size: 3rem;
 
 }
+
+@mixin body-text{
+    font-size: 1.4rem;
+
+}
+
+@mixin header{
+    font-size: 3rem;
+    font-weight: 400;
+}

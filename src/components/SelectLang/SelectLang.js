@@ -1,18 +1,32 @@
 import './SelectLang.scss';
 import Header from '../Header/Header';
 import { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 class SelectLang extends Component {
 //   functions,state would go up here
 
-    render(name) { 
+    render() { 
         return (
             <main className='select-lang'>
                 <Header/>
-                <button className='select-lang__button'>Quenya</button>
-                <button className='select-lang__button'>Sindarin</button>
+                <div className='select-lang__buttons'>
+                        <button className='select-lang__button'>
+                            <NavLink to={'/quenya'}>
+                                Quenya
+                            </NavLink>
+                        </button>
+                   
 
+                        <button className='select-lang__button'>
+                            <NavLink to={'/sindarin'}>
+                                Sindarin
+                            </NavLink>
+                        </button>
+
+
+                </div>
 
 
                
