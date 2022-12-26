@@ -1,5 +1,4 @@
 import './Intro.scss';
-import { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -29,7 +28,7 @@ function Intro() {
     useEffect(() => {
         name === "waylon" ? setWay(true) : setWay(false);
             console.log(way);
-      });
+      }, [name, way]);
    
         return (
             <main className='intro'>

@@ -1,7 +1,7 @@
 import './Quenya.scss';
 import Header from '../Header/Header';
 import Button from '../Button/Button';
-import { Component, useState, useEffect } from 'react';
+import { useState } from 'react';
 import greenArrow from '../../assets/images/arrow-green.svg'
 import axios from 'axios';
 

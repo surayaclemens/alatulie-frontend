@@ -1,7 +1,7 @@
 import './Sindarin.scss';
 import Header from '../Header/Header';
 import Button from '../Button/Button';
-import { Component, useState, useEffect } from 'react';
+import { useState } from 'react';
 import pinkArrow from '../../assets/images/arrow-pink.svg'
 import axios from 'axios';
 

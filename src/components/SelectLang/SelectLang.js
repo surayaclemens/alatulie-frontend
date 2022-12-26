@@ -1,8 +1,6 @@
 import './SelectLang.scss';
-import Header from '../Header/Header';
 import { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import blueArrow from '../../assets/images/arrow-blue.svg'
 
 
 
