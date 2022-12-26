@@ -1,12 +1,18 @@
 @use './colours' as *;
 @use './mixins' as *;
 @use './variables' as *;
+@use './typography' as *;
 
+
+body{
+    font-family: 'Istok';
+}
 
 
 
 a{ 
     text-decoration: none;
+    cursor: crosshair;
     &:visited{
         color: $text-primary-light;
     }

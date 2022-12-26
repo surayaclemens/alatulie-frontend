@@ -27,9 +27,30 @@
 
     &__button{
        @include button-basic;
-       width: 70%;
+       width: 75%;
        margin: 3rem 0;
+
+       &--quenya{
+        background-color: $button-green;
+        opacity: 100%;
+
+       }
+
+       &--sindarin{
+        background-color: $button-pink;
+
+
+       }
 
     }
 
 }
+
+.header{
+    padding: 1rem;
+    color: $text-primary-light;
+    font-weight: 400;
+    font-size: 1.35rem;
+}
+
+

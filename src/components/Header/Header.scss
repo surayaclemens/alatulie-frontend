@@ -6,12 +6,19 @@
 
 .header{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    width: 100%;
+    // width: 100%;
 
     &__arrow{
-        margin: 1rem;
+        margin: .5rem;
         cursor: pointer;
+    }
+
+    &__text{
+        color: $text-primary-light;
+        font-weight: 300;
+        margin: 0;
+        
     }
 }

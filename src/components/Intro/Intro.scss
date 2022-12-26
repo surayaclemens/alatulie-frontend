@@ -2,11 +2,14 @@
 @use '../../styles/partials/variables' as *;
 @use '../../styles/partials/mixins' as *;
 @use '../../styles/partials/global' as *;
+@use '../../styles/partials/animations' as *;
+
 
 
 .intro{
     padding: 2rem;
     height: 100vh;
+    overflow: scroll;
     text-align: left;
     background-image: url(../../assets/images/background-fade.png);
     background-size: cover;
@@ -22,24 +25,107 @@
         background: transparent;
         border: none;
         color: $text-primary-light;
-        font-size: 1.5rem;
+        font-size: 1.35rem;
         &::placeholder{
             color: $text-primary-light;
+            font-family: 'Istok';
+            font-size: 1.35rem;
 
         }
         &:focus{
             outline: none;
+            &::placeholder{
+                color: transparent;
+            }
         }
+      
     }
 
     &__body{
         @include body-text;
         margin: 0.75rem 0;
+        width: 0;
+        overflow: hidden; 
+        white-space: nowrap;
+        animation: typing 3.9s steps(40, end) forwards;
+
+        &--first{
+            animation-delay: 10s;
+        }
+        &--second{
+            animation-delay: 12s;
+        }
+        &--third{
+            animation-delay: 15s;
+        }
+        &--fourth{
+            animation-delay: 23s;
+        }
+        &--fifth{
+            animation-delay: 26s;
+        }
+        &--sixth{
+            animation-delay: 30s;
+        }
+        &--seventh{
+            animation-delay: 34s;
+        }
+        &--eighth{
+            animation-delay: 38s;
+        }
+        &--ninth{
+            animation-delay: 42s;
+        }
+        &--tenth{
+            animation-delay: 46s;
+        }
+        &--eleventh{
+            animation-delay: 50s;
+        }
+        &--twelfth{
+            animation-delay: 56s;
+        }
+        &--thirteenth{
+            animation-delay: 60s;
+        }
+        &--fourteenth{
+            animation-delay: 64s;
+        }
+        &--fifteenth{
+            animation-delay: 68s;
+        }
+        &--sixteenth{
+            animation-delay: 72s;
+        }
+        &--seventeenth{
+            animation-delay: 76s;
+        }
+        &--eighteenth{
+            animation-delay: 80s;
+        }
+        &--nineteenth{
+            animation-delay: 84s;
+        }
+        &--twentieth{
+            animation-delay: 88s;
+        }
 
         &--italic{
             font-style: italic;
         }
 
+        &--hidden{
+            display: none
+        }
+
+    }
+
+    &__button{
+        @include button-tiny;
+        cursor: crosshair;
+        &--hidden{
+            display: none;
+        }
     }
 
 }

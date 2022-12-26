@@ -13,7 +13,9 @@ import { Component } from 'react';
 
 class App extends Component {
 
+  
   render(){
+    document.title="Alatúlie | English to Elvish translator"
 
     return (
       <div className="App">
