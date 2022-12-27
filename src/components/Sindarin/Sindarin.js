@@ -19,6 +19,7 @@ function Sindarin (){
         .then(res => {
             console.log(res.data);
             setSindarin(sindarin = res.data);
+            console.log(sindarin)
             let outputObject = sindarin.find((obj)=> obj.english === input);
             console.log(outputObject.english);
             setOutput(output = outputObject.sindarin);
@@ -28,7 +29,8 @@ function Sindarin (){
     }
 
     const handleInput = event => {
-        setInput(event.target.value);
+        let lowercaseSindarin = event.target.value.toLowerCase();
+        setInput(lowercaseSindarin);
         console.log(input);
         return input;
     }
@@ -51,7 +53,7 @@ function Sindarin (){
                     onFocus={resetInput}
                     className='sindarin__input' 
                     type="text" 
-                    placeholder="e.g., lover" 
+                    placeholder="e.g., kiss" 
                     value={input}
                     onChange={handleInput}/>
                     <Button handler={translateSindarin}/>

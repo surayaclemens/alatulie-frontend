@@ -13,8 +13,9 @@ function Intro() {
 
 
     const handleName = event => {
-        setName(event.target.value);
-        console.log('name is:', event.target.value);
+        let lowercaseName = event.target.value.toLowerCase();
+        setName(lowercaseName);
+        console.log('name is:', lowercaseName);
         
     };
 

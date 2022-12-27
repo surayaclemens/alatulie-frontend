@@ -30,10 +30,12 @@ function Quenya (){
     }
 
     const handleInput = event => {
-        setInput(event.target.value);
+        let lowercaseQuenya = event.target.value.toLowerCase();
+        setInput(lowercaseQuenya);
         console.log(input);
         return input;
     }
+
 
     const resetInput = () => {
         setInput('');
