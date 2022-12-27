@@ -10,30 +10,23 @@ class SelectLang extends Component {
     render() { 
         return (
             <main className='select-lang'>
-                <NavLink to={'/'}>
-                <header className="header">  
-                    már
-                </header>
-                </NavLink>
                 <div className='select-lang__buttons'>
-                        <button className='select-lang__button select-lang__button--quenya'>
-                            <NavLink to={'/quenya'}>
-                                Quenya
-                            </NavLink>
-                        </button>
-                   
-
-                        <button className='select-lang__button select-lang__button--sindarin'>
-                            <NavLink to={'/sindarin'}>
-                                Sindarin
-                            </NavLink>
-                        </button>
-
-
+                    <button className='select-lang__button select-lang__button--quenya'>
+                        <NavLink to={'/quenya'}>
+                            Quenya
+                        </NavLink>
+                    </button>
+                
+                    <button className='select-lang__button select-lang__button--sindarin'>
+                        <NavLink to={'/sindarin'}>
+                            Sindarin
+                        </NavLink>
+                    </button>
                 </div>
-
-
-               
+                <NavLink to={'/'}>
+                    <header className="header header--italic">return to már
+                    </header>
+                </NavLink>
             </main>
         );
     }

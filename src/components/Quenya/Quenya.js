@@ -42,10 +42,12 @@ function Quenya (){
 
         return (
             <main className='quenya'>
-                <Header 
-                text="you are in quenya"
-                arrow={greenArrow}
-                />
+                <header className='quenya__header'>
+                    <Header 
+                    text="you are in quenya"
+                    arrow={greenArrow}
+                    />
+                </header>
                 <div className='quenya__content'>
                     <input 
                     onFocus={resetInput}
@@ -58,6 +60,7 @@ function Quenya (){
                     <Button handler={translateQuenya}/>
                     <h3 className='quenya__output'>{output}</h3>
                 </div>
+                <p className='quenya__footer'>you are in quenya</p>
                 
             </main>
         );

@@ -12,12 +12,17 @@
     background-size: cover;
     height: 100vh;
 
+    &__header{
+        width: 100%;
+    }
+
     &__content{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100%;
+        width: 100%;
     }
 
     &__input{
@@ -50,5 +55,11 @@
         max-width: 90%;
         overflow-wrap: normal;
 
+    }
+
+    &__footer{
+        font-size: 1rem;
+        color: $text-primary-light;
+        font-style: italic;
     }
 }

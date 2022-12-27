@@ -123,8 +123,16 @@
     &__button{
         @include button-tiny;
         cursor: crosshair;
+        color: $accent-indigo;
+
+        
         &--hidden{
             display: none;
+        }
+
+        &:visited{
+        color: $accent-indigo;
+
         }
     }
 

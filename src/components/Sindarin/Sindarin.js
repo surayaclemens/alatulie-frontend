@@ -40,10 +40,12 @@ function Sindarin (){
 
         return (
             <main className='sindarin'>
-                <Header 
-                text="you are in sindarin"
-                arrow={pinkArrow}
-                />
+                <header className='sindarin__header'>
+                    <Header 
+                    text="you are in sindarin"
+                    arrow={pinkArrow}
+                    />
+                </header>
                 <div className='sindarin__content'>
                     <input 
                     onFocus={resetInput}
@@ -55,6 +57,8 @@ function Sindarin (){
                     <Button handler={translateSindarin}/>
                     <h3 className='sindarin__output'>{output}</h3>
                 </div>
+                <p className='sindarin__footer'>you are in sindarin</p>
+
                 
             </main>
         );

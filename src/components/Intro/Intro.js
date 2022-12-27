@@ -26,7 +26,7 @@ function Intro() {
     
     
     useEffect(() => {
-        name === "waylon" ? setWay(true) : setWay(false);
+        name === ("waylon" || "Waylon") ? setWay(true) : setWay(false);
             console.log(way);
       }, [name, way]);
    
