@@ -49,6 +49,14 @@
         white-space: nowrap;
         animation: typing 3.9s steps(40, end) forwards;
 
+        &--name{
+            animation-delay: 3.5s;
+        }
+
+        &--mae{
+            animation-delay: 5.5s;
+        }
+
         &--first{
             animation-delay: 10s;
         }
@@ -59,28 +67,28 @@
             animation-delay: 15s;
         }
         &--fourth{
-            animation-delay: 23s;
+            animation-delay: 25s;
         }
         &--fifth{
-            animation-delay: 26s;
+            animation-delay: 29s;
         }
         &--sixth{
-            animation-delay: 30s;
+            animation-delay: 33s;
         }
         &--seventh{
-            animation-delay: 34s;
+            animation-delay: 37s;
         }
         &--eighth{
-            animation-delay: 38s;
+            animation-delay: 41s;
         }
         &--ninth{
-            animation-delay: 42s;
+            animation-delay: 45s;
         }
         &--tenth{
-            animation-delay: 46s;
+            animation-delay: 49s;
         }
         &--eleventh{
-            animation-delay: 50s;
+            animation-delay: 52s;
         }
         &--twelfth{
             animation-delay: 56s;

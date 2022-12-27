@@ -26,7 +26,7 @@ function Intro() {
     
     
     useEffect(() => {
-        name === ("waylon" || "Waylon") ? setWay(true) : setWay(false);
+        name === "Waylon" ? setWay(true) : setWay(false);
             console.log(way);
       }, [name, way]);
    
@@ -42,14 +42,16 @@ function Intro() {
                     id="name"
                     value={name}
                 />
-                <p className='intro__body intro__body--first'>Hi, {name}</p>
-                <p className='intro__body intro__body--second'><span className='intro__body intro__body--italic intro__body--second'>Mae govannen</span>, well met</p>
+                <p className={name ? 'intro__body intro__body--name' : 'intro__body--hidden'}>Hi, {name}</p>
+
+
+                <p className={name ? 'intro__body intro__body--mae' : 'intro__body--hidden'}><span className='intro__body intro__body--italic intro__body--mae'>Mae govannen</span>, well met</p>
 
                 {/* CONDITIONAL BIRTHDAY SECTION */}
 
                 <div className={way ? 'intro__body intro__body--first' : 'intro__body--hidden'} >
 
-                    <p className='intro__body intro__body--second'>And, by any chance is today</p>
+                    <p className='intro__body intro__body--first'>And, by any chance is today</p>
                     <p className='intro__body intro__body--third'>December 28th where you are?</p>
 
                     <input 
@@ -63,7 +65,7 @@ function Intro() {
 
                     <p className='intro__body intro__body--fourth'>I thought it might be :~)</p>
                     <p className='intro__body intro__body--fifth'> In that case, before you start</p>
-                    <p className='intro__body intro__body--sixth'>we have to wish you</p>
+                    <p className='intro__body intro__body--sixth'>I have to wish you</p>
                     <p className='intro__body intro__body--seventh'>a very, very happy birthday</p>
 
                     <p className='intro__body intro__body--eighth'>And get your word that you</p>
