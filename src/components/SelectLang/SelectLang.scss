@@ -26,10 +26,13 @@
     
 
     &__button{
-       @include button-basic;
-       width: 75%;
-       margin: 3rem 0;
-       text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include button-basic;
+        width: 75%;
+        margin: 3rem 0;
+        text-align: -webkit-center;
 
        &--quenya{
         background-color: $button-green;
