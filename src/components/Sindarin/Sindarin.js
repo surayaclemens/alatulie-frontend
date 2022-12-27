@@ -15,7 +15,7 @@ function Sindarin (){
 
 
     const translateSindarin = () => {
-        axios.get('http://localhost:8080/translations/sindarin')
+        axios.get('https://alatulie-backend.herokuapp.com/translations/sindarin')
         .then(res => {
             console.log(res.data);
             setSindarin(sindarin = res.data);
