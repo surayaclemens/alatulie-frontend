@@ -16,7 +16,7 @@ function Quenya (){
 
 
     const translateQuenya = () => {
-        axios.get('https://alatulie-backend.herokuapp.com/translations/sindarin')
+        axios.get('https://alatulie-backend.herokuapp.com/translations/quenya')
         .then(res => {
             console.log(res.data);
             setQuenya(quenya = res.data);
