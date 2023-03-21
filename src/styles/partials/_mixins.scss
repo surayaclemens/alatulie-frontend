@@ -1,4 +1,24 @@
 @use './colours' as *;
+@use './variables' as *;
+
+  
+@mixin mobile {
+    @media screen and (min-width: $mobile-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+      @content;
+    }
+  }
 
 @mixin button-basic{
     background: rgba(217, 217, 217, 0.5);
@@ -11,7 +31,7 @@
     font-size: 4rem;
     font-family: 'Istok';
     text-align: -webkit-center;
-    cursor: crosshair;
+    cursor: pointer;
 
 }
 
@@ -26,7 +46,7 @@
     font-size: 3.25rem;
     font-weight: 400;
     font-family: 'Istok';
-    cursor: crosshair;
+    cursor: pointer;
 
 
 }
@@ -42,7 +62,7 @@
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Istok';
-    cursor: crosshair;
+    cursor: pointer;
 
 
 }

@@ -11,14 +11,15 @@ class SelectLang extends Component {
         return (
             <main className='select-lang'>
                 <div className='select-lang__buttons'>
+                <h2 className='select-lang__heading'>Which language would you like to explore?</h2>
                     <button className='select-lang__button select-lang__button--quenya'>
-                        <NavLink to={'/quenya'}>
+                        <NavLink class='link'to={'/quenya'}>
                             Quenya
                         </NavLink>
                     </button>
                 
                     <button className='select-lang__button select-lang__button--sindarin'>
-                        <NavLink to={'/sindarin'}>
+                        <NavLink class='link' to={'/sindarin'}>
                             Sindarin
                         </NavLink>
                     </button>

@@ -11,7 +11,14 @@
     background-image: url(../../assets/images/background-fade.png);
     background-size: cover;
     height: 100vh;
-
+    &__heading{
+        width: 90%;
+        color: $text-primary-light;
+        margin: 1rem 0;
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
 
     &__buttons{
         width: 100%;
@@ -20,10 +27,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        @include tablet{
+            width: 70%;
+        }
     }
-
-    
 
     &__button{
         display: flex;
@@ -33,21 +40,19 @@
         width: 75%;
         margin: 3rem 0;
         text-align: -webkit-center;
-
+        color: $text-primary-light;
        &--quenya{
         background-color: $button-green;
         opacity: 100%;
-
        }
-
        &--sindarin{
         background-color: $button-pink;
-
-
        }
-
     }
+}
 
+.link{
+    color: $text-primary-light;
 }
 
 .header{
@@ -55,7 +60,6 @@
     color: $text-primary-light;
     font-weight: 400;
     font-size: 1rem;
-
     &--italic{
         font-style: italic;
     }

@@ -59,65 +59,65 @@
         }
 
         &--first{
-            animation-delay: 10s;
-        }
-        &--second{
-            animation-delay: 12s;
-        }
-        &--third{
             animation-delay: 15s;
         }
+        &--second{
+            animation-delay: 18s;
+        }
+        &--third{
+            animation-delay: 21s;
+        }
         &--fourth{
-            animation-delay: 25s;
+            animation-delay: 24s;
         }
         &--fifth{
-            animation-delay: 29s;
+            animation-delay: 27s;
         }
         &--sixth{
-            animation-delay: 33s;
+            animation-delay: 31s;
         }
         &--seventh{
-            animation-delay: 37s;
+            animation-delay: 34s;
         }
-        &--eighth{
-            animation-delay: 41s;
-        }
-        &--ninth{
-            animation-delay: 45s;
-        }
-        &--tenth{
-            animation-delay: 49s;
-        }
-        &--eleventh{
-            animation-delay: 52s;
-        }
-        &--twelfth{
-            animation-delay: 56s;
-        }
-        &--thirteenth{
-            animation-delay: 60s;
-        }
-        &--fourteenth{
-            animation-delay: 64s;
-        }
-        &--fifteenth{
-            animation-delay: 68s;
-        }
-        &--sixteenth{
-            animation-delay: 72s;
-        }
-        &--seventeenth{
-            animation-delay: 76s;
-        }
-        &--eighteenth{
-            animation-delay: 80s;
-        }
-        &--nineteenth{
-            animation-delay: 84s;
-        }
-        &--twentieth{
-            animation-delay: 88s;
-        }
+        // &--eighth{
+        //     animation-delay: 41s;
+        // }
+        // &--ninth{
+        //     animation-delay: 45s;
+        // }
+        // &--tenth{
+        //     animation-delay: 49s;
+        // }
+        // &--eleventh{
+        //     animation-delay: 52s;
+        // }
+        // &--twelfth{
+        //     animation-delay: 56s;
+        // }
+        // &--thirteenth{
+        //     animation-delay: 60s;
+        // }
+        // &--fourteenth{
+        //     animation-delay: 64s;
+        // }
+        // &--fifteenth{
+        //     animation-delay: 68s;
+        // }
+        // &--sixteenth{
+        //     animation-delay: 72s;
+        // }
+        // &--seventeenth{
+        //     animation-delay: 76s;
+        // }
+        // &--eighteenth{
+        //     animation-delay: 80s;
+        // }
+        // &--nineteenth{
+        //     animation-delay: 84s;
+        // }
+        // &--twentieth{
+        //     animation-delay: 88s;
+        // }
 
         &--italic{
             font-style: italic;
@@ -131,13 +131,8 @@
 
     &__button{
         @include button-tiny;
-        cursor: crosshair;
+        cursor: pointer;
         color: $accent-indigo;
-
-        
-        &--hidden{
-            display: none;
-        }
 
         &:visited{
         color: $accent-indigo;
